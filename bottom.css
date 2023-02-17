@@ -1,0 +1,446 @@
+.bottom-container {
+     top: 308px;
+     left: 26px;
+     width: 10rem;
+     height: 10rem;
+     position: absolute;
+     /* border: 1px solid red; */
+}
+
+.kamar-band {
+     top: -29px;
+     left: 21px;
+     rotate: 0deg;
+     width: 7.6rem;
+     height: 2rem;
+     border-radius: 50%;
+     position: absolute;
+     z-index: 2;
+     border-bottom: 1px solid black;
+     background: var(--skin-color);
+}
+
+.kamar-ball {
+     top: 27px;
+     left: 53px;
+     rotate: 0deg;
+     width: 2rem;
+     z-index: 1;
+     height: 1.5rem;
+     border-radius: 40% 50% 40% 50%;
+     position: absolute;
+     background: brown;
+     border: 1px solid black;
+}
+
+.kamar-ball2 {
+     top: 23px;
+     left: 68px;
+     rotate: -22deg;
+     width: 2rem;
+     height: 1.5rem;
+     z-index: -1;
+     border-radius: 40% 50% 40% 50%;
+     position: absolute;
+     background: brown;
+     border: 1px solid black;
+}
+
+.kamar-band-down {
+     top: -21px;
+     left: 17px;
+     rotate: 0deg;
+     width: 8rem;
+     height: 2rem;
+     z-index: -1;
+     border-radius: 50%;
+     position: absolute;
+     border: 1px solid black;
+     background: brown;
+     border-top: transparent;
+}
+
+
+.kamar-band-down::before {
+     content: '';
+     top: 18px;
+     left: 16px;
+     rotate: 1deg;
+     width: 7rem;
+     height: 2rem;
+     z-index: -1;
+     border-radius: 50%;
+     position: absolute;
+     background: brown;
+     border-top: transparent;
+}
+
+.lungi {
+     top: 15px;
+     left: -12px;
+     rotate: -81deg;
+     width: 4rem;
+     height: .9rem;
+     z-index: -2;
+     border-radius: 100%;
+     border-top: 1px solid black;
+     position: absolute;
+     background: brown;
+}
+
+.lungi>div:nth-child(1) {
+     top: 39px;
+     left: -44px;
+     rotate: 45deg;
+     width: 6rem;
+     height: 1.5rem;
+     z-index: 2;
+     border-radius: 100%;
+     border-top: 1px solid black;
+     position: absolute;
+     background: brown;
+}
+
+.lungi>div:nth-child(1)::after {
+     content: "";
+     top: 4px;
+     left: 1px;
+     rotate: 0deg;
+     width: 6rem;
+     height: 1.5rem;
+     z-index: 2;
+     border-radius: 100%;
+     border-top: 1px solid black;
+     position: absolute;
+     background: var(--skin-color);
+     /* background: brown;*/
+}
+
+.lungi>.lungi-mid {
+     top: 53px;
+     left: -26px;
+     rotate: 2deg;
+     width: 5rem;
+     height: 1rem;
+     z-index: 3;
+     border-radius: 100%;
+     border-bottom: 1px solid black;
+     position: absolute;
+     box-shadow: 3px 8px 0px 2px brown;
+}
+
+.lungi>.lungi-mid::after {
+     content: '';
+     top: 36px;
+     left: 4px;
+     rotate: -17deg;
+     width: 5rem;
+     height: 2rem;
+     z-index: 3;
+     border-radius: 100%;
+     border-top: 1px solid black;
+     position: absolute;
+     box-shadow: -3px -5px 0px 2px brown;
+}
+
+.lungi-mid-bottom {
+     top: 68px;
+     left: -29px;
+     rotate: -7deg;
+     width: 7rem;
+     height: 1.3rem;
+     z-index: 2;
+     border-radius: 30% 100% 100% 30%;
+     background: brown;
+     position: absolute;
+}
+
+.lungi-mid-bottom::after {
+     content: '';
+     top: -13px;
+     left: -2px;
+     rotate: 2deg;
+     width: 1rem;
+     height: 2.88rem;
+     z-index: 2;
+     border-radius: 50%;
+     background: brown;
+     border-left: 2px solid black;
+     position: absolute;
+}
+
+.lungi-wrapper {
+     width: 7rem;
+     height: 3.8rem;
+     top: 3px;
+     left: -8px;
+     border-radius: 50%;
+     rotate: -69deg;
+     z-index: -2;
+     position: absolute;
+     background: brown;
+     border-left: 1px solid;
+}
+
+
+.lungi-right {
+     top: 73px;
+     left: 20px;
+     rotate: 76deg;
+     width: 2rem;
+     height: 6rem;
+     z-index: 9;
+     border-radius: 50%;
+     background: brown;
+     position: absolute;
+     border-right: 1px solid black;
+}
+
+.lungi-right-cover {
+     top: 35px;
+     left: -5px;
+     rotate: 112deg;
+     width: 2rem;
+     height: 4rem;
+     /* z-index: -3; */
+     border-radius: 50%;
+     position: absolute;
+     border-right: 2px solid black;
+     box-shadow: inset -6px -6px 0px 2px brown;
+}
+
+.lungi-right-cover::before {
+     content: '';
+     top: 17px;
+     left: 10px;
+     rotate: 11deg;
+     width: 1rem;
+     height: 3rem;
+     /* z-index: -3; */
+     border-radius: 50%;
+     position: absolute;
+     border-right: 1px solid black;
+     box-shadow: 5px -2px 0 0px brown;
+}
+
+
+.lungi-right-filler {
+     top: 18px;
+     left: -7px;
+     rotate: 31deg;
+     width: 2rem;
+     height: 3rem;
+     z-index: 0;
+     border-radius: 100%;
+     position: absolute;
+     background: brown;
+     box-shadow: -9px 3px 0 0 brown, 4px 5px 0px 2px brown;
+}
+
+.lungi-right-filler::before {
+     content: '';
+     width: 1.5rem;
+     height: 4rem;
+     top: 2px;
+     left: 10px;
+     z-index: -1;
+     rotate: -63deg;
+     border-radius: 50%;
+     position: absolute;
+     background: brown;
+}
+
+
+.lungi-right-leg {
+     top: 42px;
+     left: -20px;
+     rotate: -8deg;
+     z-index: -1;
+     width: 3rem;
+     height: 4rem;
+     border-radius: 50%;
+     background: var(--skin-color);
+     position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* * leg */
+
+
+.left-leg {
+     top: 21px;
+     left: -5px;
+     rotate: -96deg;
+     width: 6rem;
+     height: 4rem;
+     z-index: -3;
+     border-radius: 100%;
+     background: var(--skin-color);
+     position: absolute;
+}
+
+.left-leg-down {
+     top: 9px;
+     left: -49px;
+     rotate: 0deg;
+     width: 5rem;
+     height: 3rem;
+     z-index: -3;
+     border-radius: 100%;
+     background: var(--skin-color);
+     position: absolute;
+}
+
+.left-foot {
+     top: 9px;
+     left: -68px;
+     rotate: 0deg;
+     width: 2rem;
+     height: 2.8rem;
+     z-index: -3;
+     border-radius: 100%;
+     background: var(--skin-color);
+     position: absolute;
+}
+
+.left-foot::before {
+     content: '';
+     top: 4px;
+     left: 26px;
+     rotate: y 54deg;
+     width: 1.2rem;
+     height: 2.5rem;
+     z-index: -1;
+     border-radius: 100%;
+     position: absolute;
+     border-left: 1px solid black;
+     background: var(--skin-color);
+}
+
+.left-foot::after {
+     content: '';
+     top: 1px;
+     left: 23px;
+     rotate: 0deg;
+     width: 1rem;
+     height: 2.8rem;
+     z-index: -3;
+     border-radius: 100%;
+     position: absolute;
+     background: brown;
+     border: 1px solid black;
+     border-right: transparent;
+}
+
+.gada {
+     top: 69px;
+     left: 100px;
+     rotate: 22deg;
+     width: 7rem;
+     height: 6rem;
+     z-index: 2;
+     background: red;
+     border-radius: 50%;
+     position: absolute;
+     border: 1px solid black;
+}
+
+.gada-rod {
+     top: -97px;
+     left: 24px;
+     rotate: 0deg;
+     width: 1rem;
+     z-index: 9;
+     height: 6rem;
+     border-radius: 15px;
+     background: red;
+     position: absolute;
+     border: 1px solid black;
+}
+
+.gada-upper {
+     content: '';
+     top: 0px;
+     left: 26px;
+     rotate: 1deg;
+     width: 4rem;
+     height: 1.2rem;
+     background: red;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+}
+
+.gada-upper::before {
+     content: '';
+     top: -6px;
+     left: 8px;
+     rotate: 1deg;
+     width: 3rem;
+     height: 1rem;
+     z-index: 1;
+     background: red;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+}
+
+.gada .inner-1 {
+     top: 50%;
+     left: 50%;
+     rotate: y 50deg;
+     width: 2rem;
+     height: 6rem;
+     translate: -50% -50%;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+}
+
+.gada .inner-2 {
+     top: 50%;
+     left: 50%;
+     rotate: y 50deg;
+     width: 8rem;
+     height: 6rem;
+     translate: -50% -50%;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+}
+
+.gada .inner-3 {
+     top: 50%;
+     left: 50%;
+     rotate: y 50deg;
+     width: 20rem;
+     height: 6rem;
+     translate: -50% -50%;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+}
+
+
+.gada-bottom {
+     top: 93%;
+     left: 110px;
+     rotate: 26deg;
+     width: 3.2rem;
+     height: 1rem;
+     z-index: -1;
+     background: red;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+}
