@@ -2,12 +2,17 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     /* for smoothness on changes*/
+     transition: all 600ms;
 }
 
+
+
 body {
-     width: 100dvw;
+     width: 100vw;
      height: 100vh;
      display: flex;
+     padding-top: 20px;
      align-items: center;
      justify-content: center;
 }
@@ -18,25 +23,48 @@ body {
      --hair-color: #111;
      --skin-color: rgb(255, 208, 121);
      --light-skin-color: rgb(255, 208, 121);
-     /* --light-skin-color: rgb(254, 172, 20); */
+     --dress-color: brown;
+     --gada-color: gold;
+}
+
+/* ** media querry */
+@media only screen and (width<=768px) {
+     body {
+          flex-direction: column-reverse;
+          height: fit-content;
+     }
+
+     .main-Container {
+          scale: .8;
+     }
+
+     .text-container {
+          padding: 20px 0;
+          margin: auto 60px;
+     }
+}
+
+
+.text {
+     color: red;
+     font-weight: 600;
+     font-size: clamp(1.5em, 4vw, 5em);
+     font-family: 'Cinzel Decorative', cursive;
+     text-shadow: -5px 8px rgb(255, 192, 192);
 }
 
 .main-Container {
-     width: 375px;
-     height: 500px;
      padding: 20px;
+     min-width: 320px;
+     min-height: 500px;
+     margin-left: 60px;
      position: relative;
-     /* border: 1px solid var(--outline-color); */
 }
-
-.content-wrapper {}
 
 .upper-container {
      position: relative;
      z-index: 1;
 }
-
-
 
 .hair-outer {
      position: relative;
@@ -293,7 +321,7 @@ body {
      aspect-ratio: 1;
      border-radius: 50%;
      position: absolute;
-     background: brown;
+     background: var(--dress-color);
 }
 
 
