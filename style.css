@@ -67,7 +67,7 @@ body {
 
 .hair-outer>div:nth-child(3) {
      top: 18px;
-     left: 21px;
+     left: 18px;
      width: 1.1rem;
      height: 3rem;
      rotate: -73deg;
@@ -76,11 +76,11 @@ body {
 
 .hair-outer>div:nth-child(3)::after {
      content: "";
-     bottom: 0;
+     bottom: -1px;
      left: 8px;
      display: block;
-     width: .75rem;
-     height: .75rem;
+     width: .95rem;
+     height: .9rem;
      rotate: -73deg;
      z-index: 1;
      border-radius: 100%;

@@ -378,19 +378,17 @@
 }
 
 .left-foot>.finger:nth-child(2) {
-     top: 22px;
+     top: 27px;
      left: -2px;
-     height: 15px;
+     height: 13px;
      width: 10px;
      rotate: 275deg;
      border: 1px solid black;
      border-bottom-color: transparent;
 }
 
-
-
 .left-foot>.finger:nth-child(3) {
-     top: 16px;
+     top: 17px;
      left: -2px;
      height: 15px;
      width: 10px;
@@ -410,7 +408,7 @@
 }
 
 .left-foot>.finger:nth-child(5) {
-     top: 1px;
+     top: -1px;
      left: -1px;
      height: 15px;
      width: 10px;
@@ -543,6 +541,7 @@
      rotate: 0deg;
      width: 8px;
      height: 4rem;
+     background: var(--skin-color);
      border-radius: 13%;
      border-left: 1px solid black;
      border-right: 1px solid black;
@@ -557,7 +556,6 @@
      height: 3rem;
      z-index: -5;
      border-radius: 50% 0 50% 50%;
-     border-left: 1px solid black;
      position: absolute;
      background: red;
 }
@@ -572,6 +570,7 @@
      border-radius: 50%;
      border-left: 1px solid black;
      position: absolute;
+     box-shadow: -9px -1px 0px 0px var(--skin-color);
 }
 
 .tail-bottom::before {
@@ -585,4 +584,5 @@
      border-radius: 50%;
      border-left: 1px solid black;
      position: absolute;
+     background: transparent;
 }

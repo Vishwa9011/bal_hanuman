@@ -16,7 +16,7 @@
 }
 
 .hands {
-     z-index: 2;
+     z-index: 3;
      position: relative;
 }
 
@@ -28,6 +28,7 @@
      rotate: 47deg;
      width: 6rem;
      height: 3rem;
+     z-index: 3;
      border-radius: 50%;
      position: absolute;
      border-top: 1px solid black;
@@ -90,7 +91,7 @@
      width: 7rem;
      height: 3rem;
      rotate: 17deg;
-     z-index: 1;
+     z-index: 4;
      border-radius: 20px 50% 50% 20px;
      background-color: var(--light-skin-color);
      border: 1px solid black;
@@ -115,10 +116,10 @@
      width: 2.3rem;
      height: 1rem;
      border-radius: 50%;
-     background: var(--light-skin-color);
      border: 1px solid black;
      border-top: transparent;
      position: absolute;
+     background: brown;
 }
 
 .left-wrist::before {
@@ -184,7 +185,7 @@
      rotate: 85deg;
      width: 4rem;
      height: 3rem;
-     z-index: -1;
+     z-index: 1;
      position: absolute;
      border-radius: 50%;
      border-top: 1px solid black;
@@ -212,35 +213,38 @@
      height: 1.4rem;
      position: absolute;
      border-radius: 50%;
-     border: 1px solid black;
+     /* border: 1px solid black; */
      border-right: transparent;
 }
 
 .right-baju-band::before {
      content: "";
-     top: 0px;
-     left: 8px;
-     rotate: 2deg;
-     width: 1rem;
-     height: 1.7rem;
+     top: 6px;
+     left: -5px;
+     rotate: 88deg;
+     width: 20px;
+     height: 8px;
      position: absolute;
-     border-radius: 50%;
+     border-radius: 32%;
      border: 1px solid transparent;
-     border-left-color: black;
-     background: var(--skin-color);
+     border-top-color: black;
+     z-index: 2;
+     background: brown;
 }
 
 .right-baju-band::after {
      content: "";
-     top: 1px;
-     left: -21px;
-     rotate: -10deg;
-     width: 3.3rem;
-     height: 1.5rem;
+     top: -1px;
+     left: -19px;
+     rotate: -20deg;
+     width: 3.5rem;
+     height: .75rem;
      position: absolute;
      border-radius: 50%;
-     border: 2px solid transparent;
+     border: 1px solid transparent;
      border-top-color: black;
+     background: var(--skin-color);
+     z-index: -1;
 }
 
 
@@ -257,6 +261,20 @@
      border-right: 1px solid black;
 }
 
+.right-elbow::before {
+     content: '';
+     top: -10px;
+     left: 7px;
+     rotate: 61deg;
+     width: 21px;
+     height: 21px;
+     position: absolute;
+     border-left: 1px solid black;
+     z-index: 10;
+     background: var(--skin-color);
+}
+
+
 .right-wrist {
      top: 42px;
      left: -7px;
@@ -264,10 +282,10 @@
      width: 2.3rem;
      height: 1rem;
      border-radius: 50%;
-     background: var(--light-skin-color);
      border: 1px solid black;
      border-top: transparent;
      position: absolute;
+     background: brown;
 }
 
 .right-wrist::before {
@@ -404,7 +422,7 @@
      width: 2rem;
      height: 3rem;
      rotate: 76deg;
-     z-index: 1;
+     z-index: 2;
      border-right: 2px solid var(--outline-color);
      border-radius: 50%;
      position: absolute;
