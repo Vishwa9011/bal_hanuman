@@ -6,8 +6,6 @@
      transition: all 600ms;
 }
 
-
-
 body {
      width: 100vw;
      height: 100vh;
@@ -25,32 +23,6 @@ body {
      --light-skin-color: rgb(255, 208, 121);
      --dress-color: brown;
      --gada-color: gold;
-}
-
-/* ** media querry */
-@media only screen and (width<=768px) {
-     body {
-          flex-direction: column-reverse;
-          height: fit-content;
-     }
-
-     .main-Container {
-          scale: .8;
-     }
-
-     .text-container {
-          padding: 20px 0;
-          margin: auto 60px;
-     }
-}
-
-
-.text {
-     color: red;
-     font-weight: 600;
-     font-size: clamp(1.5em, 4vw, 5em);
-     font-family: 'Cinzel Decorative', cursive;
-     text-shadow: -5px 8px rgb(255, 192, 192);
 }
 
 .main-Container {
