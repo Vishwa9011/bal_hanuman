@@ -17,8 +17,8 @@ body {
      --primary-white: #fff;
      --hair-color: #111;
      --skin-color: rgb(255, 208, 121);
-     /* --light-skin-color: rgb(255, 208, 121); */
-     --light-skin-color: rgb(254, 172, 20);
+     --light-skin-color: rgb(255, 208, 121);
+     /* --light-skin-color: rgb(254, 172, 20); */
 }
 
 .main-Container {

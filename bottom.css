@@ -103,18 +103,31 @@
 
 .lungi>div:nth-child(1)::after {
      content: "";
-     top: 4px;
-     left: 1px;
-     rotate: 0deg;
-     width: 6rem;
-     height: 1.5rem;
+     top: 6px;
+     left: -3px;
+     rotate: 7deg;
+     width: 8rem;
+     height: 2.5rem;
      z-index: 2;
      border-radius: 100%;
      border-top: 1px solid black;
      position: absolute;
      background: var(--skin-color);
-     /* background: brown;*/
 }
+
+.lungi-left-wrapper {
+     top: -7px;
+     left: -32px;
+     rotate: -12deg;
+     width: 7rem;
+     height: 6rem;
+     z-index: 1;
+     border-radius: 100%;
+     border-top: 1px solid black;
+     position: absolute;
+     background: brown;
+}
+
 
 .lungi>.lungi-mid {
      top: 53px;
@@ -307,10 +320,11 @@
      rotate: 0deg;
      width: 2rem;
      height: 2.8rem;
-     z-index: -3;
+     z-index: 3;
      border-radius: 100%;
      background: var(--skin-color);
      position: absolute;
+     border: 1px solid black;
 }
 
 .left-foot::before {
@@ -342,10 +356,73 @@
      border-right: transparent;
 }
 
+
+
+.left-foot>.finger {
+     z-index: 2;
+     height: .75rem;
+     width: .5rem;
+     border-radius: 50% 50% 0 0;
+     background-color: var(--skin-color);
+     position: absolute;
+}
+
+.left-foot>.finger:nth-child(1) {
+     top: 37px;
+     left: 2px;
+     height: 15px;
+     width: 10px;
+     rotate: -133deg;
+     border: 1px solid black;
+     border-bottom-color: transparent;
+}
+
+.left-foot>.finger:nth-child(2) {
+     top: 22px;
+     left: -2px;
+     height: 15px;
+     width: 10px;
+     rotate: 275deg;
+     border: 1px solid black;
+     border-bottom-color: transparent;
+}
+
+
+
+.left-foot>.finger:nth-child(3) {
+     top: 16px;
+     left: -2px;
+     height: 15px;
+     width: 10px;
+     rotate: -80deg;
+     border: 1px solid black;
+     border-bottom-color: transparent;
+}
+
+.left-foot>.finger:nth-child(4) {
+     top: 8px;
+     left: -3px;
+     height: 15px;
+     width: 10px;
+     rotate: -81deg;
+     border: 1px solid black;
+     border-bottom-color: transparent;
+}
+
+.left-foot>.finger:nth-child(5) {
+     top: 1px;
+     left: -1px;
+     height: 15px;
+     width: 10px;
+     rotate: -77deg;
+     border: 1px solid black;
+     border-bottom-color: transparent;
+}
+
 .gada {
      top: 69px;
      left: 100px;
-     rotate: 22deg;
+     rotate: 18deg;
      width: 7rem;
      height: 6rem;
      z-index: 2;
@@ -362,7 +439,7 @@
      width: 1rem;
      z-index: 9;
      height: 6rem;
-     border-radius: 15px;
+     border-radius: 0 0 15px 15px;
      background: red;
      position: absolute;
      border: 1px solid black;
@@ -434,13 +511,78 @@
 
 .gada-bottom {
      top: 93%;
-     left: 110px;
-     rotate: 26deg;
+     left: 113px;
+     rotate: 23deg;
      width: 3.2rem;
      height: 1rem;
+     z-index: 1;
+     background: red;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+}
+
+.gada-ball {
+     top: 158px;
+     left: 132px;
+     rotate: 16deg;
+     width: 0.5rem;
+     height: .75rem;
      z-index: -1;
      background: red;
      border-radius: 50%;
      border: 1px solid black;
+     position: absolute;
+}
+
+/* *Tail */
+
+.tail {
+     top: -40px;
+     left: -20px;
+     rotate: 0deg;
+     width: 8px;
+     height: 4rem;
+     border-radius: 13%;
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+     position: absolute;
+}
+
+.tail-upper {
+     top: -26px;
+     left: -31px;
+     rotate: -102deg;
+     width: 2rem;
+     height: 3rem;
+     z-index: -5;
+     border-radius: 50% 0 50% 50%;
+     border-left: 1px solid black;
+     position: absolute;
+     background: red;
+}
+
+.tail-bottom {
+     top: -10px;
+     left: -15px;
+     rotate: -63deg;
+     width: 53px;
+     height: 3rem;
+     z-index: -5;
+     border-radius: 50%;
+     border-left: 1px solid black;
+     position: absolute;
+}
+
+.tail-bottom::before {
+     content: '';
+     top: -3px;
+     left: -9px;
+     rotate: -8deg;
+     width: 53px;
+     height: 4rem;
+     z-index: -5;
+     border-radius: 50%;
+     border-left: 1px solid black;
      position: absolute;
 }
