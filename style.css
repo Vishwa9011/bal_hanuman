@@ -23,6 +23,8 @@ body {
      --light-skin-color: rgb(255, 208, 121);
      --dress-color: brown;
      --gada-color: gold;
+     --mouth-color: rgb(255, 48, 48);
+
 }
 
 /* ** media querry */
@@ -46,7 +48,6 @@ body {
      }
 }
 
-
 .text {
      color: red;
      font-weight: 600;
@@ -67,6 +68,7 @@ body {
      position: relative;
      z-index: 1;
 }
+
 
 .hair-outer {
      position: relative;
@@ -541,7 +543,6 @@ body {
      top: 88px;
      border-radius: 50%;
      left: 83px;
-     /* z-index: 1; */
      rotate: -5deg;
      position: absolute;
      border-right: 2px solid #111;
@@ -553,7 +554,6 @@ body {
 }
 
 
-
 .mouth>div:nth-child(1) {
      top: 100px;
      left: 17px;
@@ -561,11 +561,22 @@ body {
      height: 3rem;
      rotate: 10deg;
      border-radius: 50%;
-     background: red;
+     background: var(--mouth-color);
      position: absolute;
 }
 
-
+.mouth>div:nth-child(1)::before {
+     content: '';
+     top: 9px;
+     left: 41px;
+     width: 4rem;
+     height: 2rem;
+     rotate: -25deg;
+     border-radius: 50%;
+     background: var(--mouth-color);
+     position: absolute;
+     /* background: blue; */
+}
 
 .mouth>div:nth-child(2) {
      top: 95px;
@@ -574,7 +585,7 @@ body {
      rotate: -20deg;
      height: 3rem;
      border-radius: 50%;
-     background: red;
+     background: var(--mouth-color);
      position: absolute;
 }
 
@@ -584,7 +595,7 @@ body {
      top: 117px;
      left: 80px;
      z-index: 100;
-     aspect-ratio: 1 / 1.4;
+     aspect-ratio: 1 / 2;
      border-radius: 50%;
      border: 1px solid var(--outline-color);
      background: white;
